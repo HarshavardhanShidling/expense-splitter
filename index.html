@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Expense Splitter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="phone">
+
+<h2>💰 Expense Splitter</h2>
+
+<div class="input-group">
+<label>Total Bill (₹)</label>
+<input type="number" id="billAmount" placeholder="Enter total bill" min="1">
+</div>
+
+<div class="input-group">
+<label>Number of Friends</label>
+<input type="number" id="people" placeholder="Enter number of people" min="1">
+</div>
+
+<div class="input-group">
+<label>Tip % (optional)</label>
+<input type="number" id="tip" placeholder="Tip percentage" min="0">
+</div>
+
+<button onclick="calculateSplit()">Split Bill</button>
+
+<div class="result">
+<p>Each Person Pays</p>
+<h1 id="result">₹0</h1>
+</div>
+
+<button class="reset" onclick="reset()">Reset</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
