@@ -5,6 +5,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
+transition:0.3s;
 }
 
 .phone{
@@ -16,23 +17,14 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15);
 text-align:center;
 }
 
-h2{
-margin-bottom:20px;
-}
-
 .input-group{
-margin-bottom:15px;
+margin-bottom:12px;
 text-align:left;
-}
-
-label{
-font-size:14px;
 }
 
 input{
 width:100%;
 padding:10px;
-margin-top:5px;
 border-radius:8px;
 border:1px solid #ccc;
 }
@@ -54,21 +46,44 @@ background:#43a047;
 }
 
 .result{
-margin-top:20px;
+margin-top:15px;
 background:#f7f7f7;
-padding:15px;
+padding:10px;
 border-radius:10px;
-}
-
-.result h1{
-margin:5px;
-color:#4CAF50;
 }
 
 .reset{
 background:#ff5252;
 }
 
-.reset:hover{
-background:#e53935;
+.dark-btn{
+background:#333;
+margin-bottom:10px;
+}
+
+ul{
+list-style:none;
+padding:0;
+}
+
+li{
+background:#eee;
+margin-top:5px;
+padding:8px;
+border-radius:6px;
+}
+
+/* Dark Mode */
+
+.dark{
+background:#1e1e1e;
+color:white;
+}
+
+.dark .phone{
+background:#2c2c2c;
+}
+
+.dark li{
+background:#444;
 }
